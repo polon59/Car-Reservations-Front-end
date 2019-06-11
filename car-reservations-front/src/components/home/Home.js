@@ -7,8 +7,13 @@ class Home extends Component{
     }
 
     render(){
-        <div>
-            <h3>Homepage</h3>
-        </div>
+        return(
+            <div>
+                <h3>Homepage</h3>
+            </div>
+        )
+        
     }
 }
+
+export default Home;
