@@ -1,5 +1,6 @@
 import {BrowserRouter as Router,Route} from 'react-router-dom';
 import React from 'react';
+import Navbar from './components/common/navbar/Navbar'
 import Home from './components/home/Home';
 import Offer from './components/offer/Offer';
 import Contact from './components/contact/Contact';
@@ -9,7 +10,7 @@ function App() {
   return (
     <Router>
         <div className="App">
-        <h1>NAVBAR</h1>
+          <Navbar/>
           <Route 
             exact path="/" 
             render={(props) => 
