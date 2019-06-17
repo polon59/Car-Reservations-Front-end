@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CarsTable from './CarsTable';
 
 
 class Offer extends Component{
@@ -17,7 +18,6 @@ class Offer extends Component{
         })
     }
 
-
     componentWillMount(){
         setTimeout(() => {
             this.updateCarsList();
@@ -35,8 +35,8 @@ class Offer extends Component{
         return(
             <div>
                 <h3>page with offer</h3>
-                
-                {JSON.stringify(cars)}
+                <CarsTable cars = {cars}/>
+                {/* {JSON.stringify(cars)} */}
             </div>
         )
     }
