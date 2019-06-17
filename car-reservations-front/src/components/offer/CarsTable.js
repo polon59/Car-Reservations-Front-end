@@ -1,5 +1,5 @@
 import React from 'react';
-import Paper from '@material-ui/core/Paper';
+import CarsTableCell from './CarsTableCell';
 import Grid from '@material-ui/core/Grid';
 
 const CarsTable = (props) =>{
@@ -7,18 +7,14 @@ const CarsTable = (props) =>{
 
     const carsList = cars.map((element)=>{
         return (
-            <Grid item xs={4}>
-                <Paper >
-                    {JSON.stringify(element)}
-                </Paper>
-            </Grid>
+            <CarsTableCell key={element.carId} carData = {element}/>
         )
     })
 
 
     return(
     <div>
-      <Grid container spacing={3}>
+      <Grid container spacing={1}>
         {carsList}
       </Grid>
     </div>
