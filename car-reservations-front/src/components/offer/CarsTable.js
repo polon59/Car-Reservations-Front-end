@@ -14,7 +14,7 @@ const CarsTable = (props) =>{
 
     return(
     <div>
-      <Grid container spacing={1}>
+      <Grid container spacing={2} justify="center">
         {carsList}
       </Grid>
     </div>

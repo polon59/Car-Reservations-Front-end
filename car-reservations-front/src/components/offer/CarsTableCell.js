@@ -7,8 +7,8 @@ const CarsTableCell = (props) =>{
 
 
     return(
-        <Grid item xs={4}>
-            <Paper >
+        <Grid item xs={12} sm={6} md={4}>
+            <Paper className="carsTablePaper">
                 <h3>{`${brand} ${model}`}</h3>
                 <p>{category}</p>
                 <h4>{`${price} 	€/Day`}</h4>

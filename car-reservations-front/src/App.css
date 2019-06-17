@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  width: 90%;
+  margin: auto;
 }
 
 body{
@@ -10,6 +12,10 @@ body{
 .navbar {
  width: 100%;
  background-color: blue;
+}
+
+.carsTablePaper{
+  padding: 20px;
 }
 
 .App-header {
@@ -27,11 +33,3 @@ body{
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
