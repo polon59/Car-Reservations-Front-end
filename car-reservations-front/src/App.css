@@ -15,7 +15,33 @@ body{
 }
 
 .carsTablePaper{
-  padding: 20px;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.carsTableCell{
+  padding: 15px;
+ position: relative;
+ height: 450px;
+}
+
+.carsTablePaper .imageWrapper{
+  width: 100%;
+  height: 60%;
+  position: relative;
+}
+
+.carsTablePaper img{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left: 0;
+  margin:auto;
+
+  width: 100%;
+  height: auto;
+  max-height: 100%;
 }
 
 .App-header {
