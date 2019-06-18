@@ -27,6 +27,14 @@ class DBAccess{
             resolve(dummyData);
         })
     }
+
+
+    getCarDetailsById(id){
+        return new Promise((resolve,reject)=>{
+            const car = {"carId":17,"brand":"Ford","model":"C-Max","year":2015,"price":20.0,"category":"Family","seats":5,"doors":5,"automaticGearbox":false,"automaticAC":true,"imageSource":"https://www.fordeumedia-c.ford.com/nas/gforcenaslive/pol/ceu04/yyp/images/resize767xpolceu04yypbs-uavs-diacmaa(a)(a)pn3jv_21_0.png"};
+            resolve(car);
+        })
+    }
 }
 
 export default DBAccess;
