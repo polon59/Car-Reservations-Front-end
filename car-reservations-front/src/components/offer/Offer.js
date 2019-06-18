@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CarsTable from './CarsTable';
+import './styles/Offer.css';
 
 
 class Offer extends Component{
