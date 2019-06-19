@@ -5,6 +5,7 @@ import Home from './components/home/Home';
 import Offer from './components/offer/Offer';
 import Contact from './components/contact/Contact';
 import DBAccess from './Fetch/DBAccess';
+import ViewCar from './components/offer/ViewCar';
 import './App.css';
 
 class App extends React.Component{
@@ -26,7 +27,7 @@ class App extends React.Component{
                 }
             />
             <Route 
-              path="/offer"
+              exact path="/offer"
               render={(props) => 
                 <Offer DBAccess = {this.DBAccess}/>}
             />
@@ -34,6 +35,11 @@ class App extends React.Component{
               path="/contact" 
               render={(props) => 
                 <Contact/>}
+            />
+            <Route 
+            path="/offer/carViewCar/:id" 
+            render={(props) => 
+                <ViewCar id={props.match.params.id} DBAccess = {this.DBAccess}/>}
             />
           </div>
         </Router>
