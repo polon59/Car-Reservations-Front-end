@@ -11,8 +11,8 @@ import { withStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import AddBox from '@material-ui/icons/AddBox'
-import InsertChart from '@material-ui/icons/InsertChart'
+import Voicemail from '@material-ui/icons/Voicemail'
+import Mail from '@material-ui/icons/Mail'
 import ListAlt from '@material-ui/icons/ListAlt'
 import Home from '@material-ui/icons/Home'
 import {Link} from 'react-router-dom';
@@ -52,6 +52,11 @@ const styles = theme => ({
       display: 'none',
     },
   },
+  logo:{
+      maxHeight : 56,
+      width: 'auto',
+      padding : 6
+  }
 });
 
 class Navbar extends React.Component {
@@ -122,13 +127,14 @@ class Navbar extends React.Component {
       <div className={classes.root}>
         <AppBar className={classes.root} position="fixed">
           <Toolbar>
-            <Typography className={classes.sectionMobile} variant="h6" color="inherit" noWrap>
+              <img src="./resources/logo.png" className={classes.logo} alt="page logo"/>
+            {/* <Typography className={classes.sectionMobile} variant="h6" color="inherit" noWrap>
               {pageTitle}
-            </Typography>
+            </Typography> */}
 
-            <Typography className={classes.sectionDesktop} variant="h6" color="inherit" noWrap>
+            {/* <Typography className={classes.sectionDesktop} variant="h6" color="inherit" noWrap>
               {pageTitle}
-            </Typography>
+            </Typography> */}
             <div className={classes.grow} />
                 <div className={classes.sectionDesktop}>
 
@@ -138,11 +144,11 @@ class Navbar extends React.Component {
                 </MenuItem>
                 <MenuItem className={classes.item} color="inherit" component={Link} to={'/offer'}>
                     Our cars
-                    <AddBox className='navIcon'/>
+                    <Voicemail className='navIcon'/>
                 </MenuItem>
                 <MenuItem className={classes.item} color="inherit" component={Link} to={'/contact'}>
                     Contact
-                    <InsertChart className='navIcon'/>
+                    <Mail className='navIcon'/>
                 </MenuItem>
                 <IconButton color="inherit">
                     <Badge badgeContent={2} color="secondary">
