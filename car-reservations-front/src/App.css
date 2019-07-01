@@ -7,6 +7,7 @@
   width: 90%;
   margin: auto;
   min-height: 100vh;
+  margin-top: 7vw;
 }
 
 body{
@@ -20,11 +21,8 @@ body{
 
 footer {
   width: 100%;
+  text-align: center;
   margin-top: 5vh;
   background-color: rgb(214, 0, 0);
  }
 
-
- footer ul{
-   margin: 0;
- }
