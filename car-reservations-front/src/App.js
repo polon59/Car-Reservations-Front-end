@@ -6,6 +6,7 @@ import Offer from './components/offer/Offer';
 import Contact from './components/contact/Contact';
 import DBAccess from './Fetch/DBAccess';
 import ViewCar from './components/offer/ViewCar';
+import Footer from './components/common/footer/Footer';
 import './App.css';
 
 class App extends React.Component{
@@ -18,8 +19,9 @@ class App extends React.Component{
   render(){
     return (
       <Router>
+        <React.Fragment>
+          <Navbar/>
           <div className="App">
-            <Navbar/>
             <Route 
               exact path="/" 
               render={(props) => 
@@ -42,6 +44,8 @@ class App extends React.Component{
                 <ViewCar id={props.match.params.id} DBAccess = {this.DBAccess}/>}
             />
           </div>
+          <Footer/>
+          </React.Fragment>
         </Router>
     );
   }
