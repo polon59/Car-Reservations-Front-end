@@ -4,12 +4,12 @@ import Grid from '@material-ui/core/Grid';
 const Footer = (props) =>{
     return(
         <footer>
-            <Grid container spacing={0} justify="center">
+            <Grid container justify="center">
                 <Grid item xs={12} md={4}>
                     <p>Contact</p> 
                 </Grid>
                 <Grid item xs={12} md={4}>
-                    Designed and built by Seweryn91 & <a href="http://"></a> polon59
+                    <p>Designed and built by Seweryn91 & polon59</p>
                 </Grid>
                 <Grid item xs={12} md={4}>
                     <p>About</p>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CarsTable from './CarsTable';
 import './styles/Offer.css';
+import StillLoading from '../common/StillLoading';
 
 
 class Offer extends Component{
@@ -29,7 +30,7 @@ class Offer extends Component{
         const {cars} = this.state;
         if (!cars){
             return(
-                <h3>Loading...</h3>
+                <StillLoading/>
             )
         }
 
